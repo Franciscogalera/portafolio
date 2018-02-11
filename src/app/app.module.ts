@@ -8,7 +8,7 @@ import {app_routing} from './app.routes';
 //Servicios
 import {InformacionService} from './services/informacion.service';
 
-import {InformacionService} from './services/informacion.service';
+import {ProductosService} from './services/productos.service';
 
 //Components
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioItemComponent } from './components/portfolio-item/portfolio-item.component';
-import {HttpModule} from '@angular/http';
+
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import {HttpModule} from '@angular/http';
     app_routing,
     HttpModule
   ],
-  providers: [InformacionService],
+  providers: [InformacionService, ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
